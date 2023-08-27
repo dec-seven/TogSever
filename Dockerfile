@@ -9,8 +9,7 @@ WORKDIR /app/tog/
 
 
 # 将 package.json 和 package-lock.json 复制到容器中
-COPY  package*.json  /app/tog_sever/
-RUN cd /app/tog_sever/
+COPY . .
 
 # 安装项目依赖  
 RUN npm install    
